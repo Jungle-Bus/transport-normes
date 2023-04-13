@@ -3964,6 +3964,22 @@ passagers)* *–* Element
 |                     | NumberOfFlights     | xsd:integer      | 0:1              | Nombre de volées de marches                                         |
 | «cntd»              | flights             | StairFlight      | 0:\*             | Description des volées de marche constituant l’escalier             |
 
+<div class="table-title">KeyList pour StaircaseEquipment</div>
+
+<table style="width:100%;">
+<tbody>
+<tr class="odd">
+<td><strong>Clef</strong></td>
+<td><strong>Valeurs et description</strong></td>
+</tr>
+<tr>
+<td><em>StepLength</em></td>
+<td><p>La longueur de la marche, en mètres arrondis au cm.</p>
+<p>Correspond à l'attribut ESCALIER.giron dans le standard CNIG.</p></td>
+</tr>
+</tbody>
+</table>
+
 <div class="table-title">StairFlight (volées de marche d’excalier) – Element</div>
 
 |                     |                     |                   |                  |                                                                         |
