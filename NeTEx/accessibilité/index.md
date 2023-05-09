@@ -4976,17 +4976,13 @@ passagers)* *–* Element
 Notez que les parkings automobiles sont décrits en tant que tel et
 indépendament des équipements.
 
-<div class="table-title">CycleParkingEquipment (parcs à vélos) – Element</div>
+<div class="table-title">CycleParkingEquipment (parcs à vélos) – Élément</div>
 
-|                     |                |                    |                  |                                                    |
-|---------------------|----------------|--------------------|------------------|----------------------------------------------------|
-| **Classifi­cation** | **Name**       | **Type**           | **Cardin­ality** | **Description**                                    |
-| *::>*               | *::>*          | *PlaceEquipment*   | *::>*            | CYCLE PARKING EQUIPMENT hérite de PLACE EQUIPMENT. |
-| «PK»                | id             | CycleParkingIdType | 1:1              | Identifiant du CYCLE PARKING EQUIPMENT.            |
-|                     | NumberOfSpaces | xsd:integer        | 0:1              | Nombre de places maximal disponible                |
-|                     |                |                    |                  |                                                    |
-|                     |                |                    |                  |                                                    |
-|                     |                |                    |                  |                                                    |
+| Classification | Nom            | Type               | Cardinalité | Description                                        |
+| -------------- | -------------- | ------------------ | ----------- | -------------------------------------------------- |
+| *::>*          | *::>*          | *PlaceEquipment*   | *::>*       | CYCLE PARKING EQUIPMENT hérite de PLACE EQUIPMENT. |
+| «PK»           | id             | CycleParkingIdType | 1:1         | Identifiant du CYCLE PARKING EQUIPMENT.            |
+|                | NumberOfSpaces | xsd:integer        | 0:1         | Nombre maximal de places disponibles               |
 
 # Annexe (informative) - Structure des Parkings
 
