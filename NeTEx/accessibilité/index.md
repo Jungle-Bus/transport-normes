@@ -204,6 +204,11 @@ l'Accessibilité. Ce modèle a pour but de décrire l'accessibilité
 des cheminements extérieurs en voirie, typiquement des trottoirs
 reliant un arrêt de transport en commun à l’entrée d’un ERP.
 
+Des compléments issus de l'ontologie du projet OpenStreetMap ont également
+été apportés au document. OpenStreetMap (OSM) est un projet collaboratif
+de cartographie proposant une base de données géographiques libre du monde
+entier.
+
 Si la première motivation pour la définition de ce profil est bien
 l'accessibilité, cet objet n'est en aucun cas limitatif et les
 informations contenues (en particulier concernant les équipements et les
@@ -2195,7 +2200,7 @@ aussi pour limiter le volume d'information à gérer par les systèmes.
 <li><p><em>discomfortable (dégradation entraînant une difficulté d'usage ou d'inconfort)</em></p></li>
 <li><p><em>hazardous (dégradation entraînant un problème de sécurité immédiat)</em></p></li>
 </ul>
-<p>À rapprocher de l'attribut CIRCULATION.etatRevetement dans le standard CNIG</p>
+<p>À rapprocher de l'attribut CIRCULATION.etatRevetement dans le standard CNIG et du tag OpenStreetMap <a target="_blank" href="https://wiki.openstreetmap.org/wiki/FR:Key:smoothness">smoothness</a>.</p>
 </td>
 </tr>
 <tr>
@@ -3537,8 +3542,10 @@ passagers)* *–* Element
 <li><p><em>mainEntrance (entrée principale)</em></p></li>
 <li><p><em>secondaryEntrance (entrée secondaire)</em></p></li>
 <li><p><em>siteEntrance (entrée de site)</em></p></li>
+<li><p><em>serviceEntrance (entrée de service, principalement pour les employés et les livraisons)</em></p></li>
+<li><p><em>emergencyEntrance (sortie de secours)</em></p></li>
 </ul>
-<p>À rapprocher de l'attribut ENTREE.type dans le standard CNIG.</p>
+<p>À rapprocher de l'attribut ENTREE.type dans le standard CNIG et du tag OpenStreetMap <a target="_blank" href="https://wiki.openstreetmap.org/wiki/FR:Key:entrance">entrance</a>.</p>
 </td>
 </tr>
 <tr>
@@ -3615,7 +3622,7 @@ passagers)* *–* Element
 <li><p><em>vertical (bâton de maréchal, barre verticale)</em></p></li>
 <li><p><em>other (autre)</em></p></li>
 </ul>
-<p>À rapprocher de l'attribut ENTREE.typePoignée dans le standard CNIG.</p>
+<p>À rapprocher de l'attribut ENTREE.typePoignée dans le standard CNIG et du tag OpenStreetMap door:handle.</p>
 </td>
 </tr>
 </tbody>
@@ -3926,13 +3933,13 @@ passagers)* *–* Element
 <tr>
 <td><em>RemainingWidth</em></td>
 <td><p>La largeur de passage utile restante sur le cheminement lors du contournement de la surface accidentée, en mètres arrondis au cm.</p>
-<p>À rapprocher de l'attribut OBSTACLE.largeurUtile dans le standard CNIG.</p></td>
+<p>À rapprocher de l'attribut OBSTACLE.largeurUtile dans le standard CNIG et du tag OpenStreetMap maxwidth:physical.</p></td>
 </tr>
 <tr>
 <td><em>Length</em></td>
 <td><p>La longueur de l'obstacle, en mètres arrondis au cm.</p>
 <p>Si la surface accidentée présente une longueur importante, un SitePathLink dédié sera plus adapté à sa représentation.</p>
-<p>À rapprocher de l'attribut OBSTACLE.longueurObstacle dans le standard CNIG.</p></td>
+<p>À rapprocher de l'attribut OBSTACLE.longueurObstacle dans le standard CNIG et du tag OpenStreetMap <a target="_blank" href="https://wiki.openstreetmap.org/wiki/FR:Key:length">length</a>.</p></td>
 </tr>
 <tr>
 <td><em>VisualContrast</em></td>
@@ -5502,3 +5509,7 @@ Identification of Fixed Objects in Public Transport (IFOPT)
 Standard CNIG Accessibilité du cheminement en voirie : 
 http://cnig.gouv.fr/IMG/documents_wordpress/2022/05/220504_Standard_CNIG_Accessibilite_v2022-05.pdf 
 (v2021-10 rev. 2022-05)
+
+Documentation collaborative sur la cartographie des cheminements piétons
+et de l'accessibilité dans OpenStreetMap : 
+https://wiki.openstreetmap.org/wiki/FR:Cheminements_pi%C3%A9tons
