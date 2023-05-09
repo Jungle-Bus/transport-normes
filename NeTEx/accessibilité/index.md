@@ -3997,7 +3997,7 @@ passagers)* *–* Element
 
 <table style="width:100%;">
 <tbody>
-<tr class="odd">
+<tr>
 <td><strong>Clef</strong></td>
 <td><strong>Valeurs et description</strong></td>
 </tr>
@@ -4005,6 +4005,40 @@ passagers)* *–* Element
 <td><em>StepLength</em></td>
 <td><p>La longueur de la marche, en mètres arrondis au cm.</p>
 <p>Correspond à l'attribut ESCALIER.giron dans le standard CNIG.</p></td>
+</tr>
+<tr>
+<td><em>StepCondition</em></td>
+<td><p>Indique la régularité des marches :</p>
+<ul>
+<li><p><em>even (l'escalier dispose de marches régulières, toutes de même hauteur et profondeur)</em></p></li>
+<li><p><em>uneven (les marches ne sont pas toutes de même taille)</em></p></li>
+<li><p><em>rough (les marches sont de taille très différentes, certaines peuvent être manquantes ou fortement en pente)</em></p></li>
+</ul>
+<p>Correspond au tag OpenStreetMap <a target="_blank" href="https://wiki.openstreetmap.org/wiki/FR:Key:step:condition">step:condition</a>.</p>
+</td>
+</tr>
+<tr>
+<td><em>StairRamp</em></td>
+<td><p>Indique la présence d'une rampe inclue au sein de l'escalier :</p>
+<ul>
+<li><p><em>bicycle (une rampe peu large sur le côté, prévue pour pousser un vélo)</em></p></li>
+<li><p><em>luggage (une rampe sur le côté, prévue pour faire rouler une valise)</em></p></li>
+<li><p><em>stroller (une paire de rampes avec des marches entre les deux, prévue pour pousser une poussette)</em></p></li>
+<li><p><em>other (un autre type de rampe incluse dans l'escalier lui-même)</em></p></li>
+<li><p><em>none (pas de rampe dans l'escalier)</em></p></li>
+</ul>
+<p>Correspond aux tags OpenStreetMap <a target="_blank" href="https://wiki.openstreetmap.org/wiki/FR:Key:ramp">ramp et ramp:*</a>.</p>
+</td>
+</tr>
+<tr>
+<td><em>TactileWriting</em></td>
+<td><p>Indique la présence de signalétique qui peut être lue de manière tactile (en braille par exemple) sur la main courante :</p>
+<ul>
+<li><p><em>true</em></p></li>
+<li><p><em>false</em></li>
+</ul>
+<p>Correspond aux tags OpenStreetMap <a target="_blank" href="https://wiki.openstreetmap.org/wiki/FR:Key:tactile_writing">tactile_writing et tactile_writing:*</a>.</p>
+</td>
 </tr>
 </tbody>
 </table>
