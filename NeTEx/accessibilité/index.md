@@ -4984,6 +4984,32 @@ indépendament des équipements.
 | «PK»           | id             | CycleParkingIdType | 1:1         | Identifiant du CYCLE PARKING EQUIPMENT.            |
 |                | NumberOfSpaces | xsd:integer        | 0:1         | Nombre maximal de places disponibles               |
 
+<div class="table-title">KeyList pour CycleParkingEquipment</div>
+
+<table style="width:100%;">
+<tbody>
+<tr>
+<td><strong>Clef</strong></td>
+<td><strong>Valeurs et description</strong></td>
+</tr>
+<tr>
+<td><em>CycleParkingType</em></td>
+<td><p>Type d'infrastructure pour tenir, accrocher et sécuriser les vélos :</p>
+<ul>
+<li><p><em>shed : Abri dédié au stationnement de plusieurs vélos</em></p></li>
+<li><p><em>lockers : Abri à vélos individuels verrouillés</em></p></li>
+<li><p><em>stands : Arceaux à vélos</em></p></li>
+<li><p><em>wallLoops : Râteliers à vélos</em></p></li>
+<li><p><em>bollard : Potelet généralement équipé de deux arceaux latéraux dédiés au stationnement des vélos</em></p></li>
+<li><p><em>floor : Zone destinée à accueillir les vélos sans qu'il n'y ait d'équipement spécifique pour les accrocher ou les sécuriser</em></p></li>
+<li><p><em>other : autre type de stationnement vélo</em></p></li>    
+</ul>
+<p>Correspond au tag OpenStreetMap <a target="_blank" href="https://wiki.openstreetmap.org/wiki/FR:Key:bicycle_parking">bicycle_parking</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 # Annexe (informative) - Structure des Parkings
 
 *<span class="hl">Les informations sur les parkings sont fournies ici à
